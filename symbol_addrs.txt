@@ -1,0 +1,5 @@
+nuPiReadRomOverlay = 0x80060710;
+state_step_pause = 0x80034CBC;
+state_step_file_select = 0x80035768;
+state_step_language_select = 0x80035690;
+

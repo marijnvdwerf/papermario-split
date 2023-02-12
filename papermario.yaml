@@ -236,4 +236,44 @@ segments:
       - [0x71D80]
   - type: bin
     start: 0x71D80
+
+  - name: pause
+    type: code
+    dir: pause
+    start: 0x13B8F0
+    vram: 0x80246AB0
+    symbol_name_format: pause_$VRAM
+    subsegments:
+      - [0x13B8F0, c]
+      - [0x13D8E0, c]
+      - [0x13E6F0, c]
+      - [0x13FE50, c]
+      - [0x142760, c]
+      - [0x143E60, c]
+      - [0x145B40, c]
+      - [0x146A70, c]
+      - [0x147FC0, c]
+      - [0x148130, bin]
+      # TODO: 0x8580 bytes of .bss
+      - [0x1672D0]
+
+  - [0x1672D0, bin]
+
+  - name: filemenu
+    type: code
+    dir: filemenu
+    start: 0x16F4D0
+    vram: 0x80246AB0
+    symbol_name_format: filemenu_$VRAM
+    subsegments:
+      - [0x16F4D0, c]
+      - [0x1716E0, c]
+      - [0x1737E0, c]
+      - [0x174D50, c]
+      - [0x1773A0, bin]
+        # TODO: 0x10B0 bytes of .bss
+      - [0x17A160]
+
+  - [0x17A160, bin]
+
   - [0x4000000]
