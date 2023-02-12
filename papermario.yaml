@@ -265,6 +265,7 @@ segments:
     start: 0x16F4D0
     vram: 0x80246AB0
     symbol_name_format: filemenu_$VRAM
+    exclusive_ram_id: filemenu
     subsegments:
       - [0x16F4D0, c]
       - [0x1716E0, c]
